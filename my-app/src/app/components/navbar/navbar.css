@@ -1,0 +1,37 @@
+
+
+.NavbarComponent {
+    width: 100%;
+}
+
+.NavbarComponent-in {
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-one {
+    width: 16%;
+}
+
+.nav-two {
+    width: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.nav-two a {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: .2rem 1rem;
+}
+
+.nav-two a:hover {
+    text-decoration: underline;
+    color: blue;
+}

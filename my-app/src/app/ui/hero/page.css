@@ -1,0 +1,75 @@
+.HeroComponent {
+    width: 100%;
+}
+
+.HeroComponent-in {
+    width: 100%;
+    height: 90vh;
+}
+
+.hero-one {
+    width: 100%
+}
+
+.home-one-one {
+    width: 100%;
+    height: 90vh;
+}
+
+.home-one-one img {
+    width: 100%;
+    height: 100%;
+}
+
+.home-one-two {
+    width: fit-content;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    display: block;
+}
+
+.home-one-two-one {
+    padding: 0rem;
+    padding: 4rem 0rem 0rem 0rem;
+}
+
+.home-one-two-one h1 {
+    font-size: 18rem;
+    color: rgb(241, 241, 241);
+    font-weight: 900;
+    line-height: .8;
+}
+
+.home-one-two-two {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-one-two-two p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.home-one-two-three {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-one-two-three p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.home-one-two-three p span {
+    font-weight: 900;
+    color: black;
+}
