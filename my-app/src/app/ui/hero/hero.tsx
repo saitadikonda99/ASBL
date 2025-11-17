@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
-import './page.css'
+import './hero.css'
 
 const Page = () => {
   return (
-    <div className="HeroComponent">
+    <div id="about" className="HeroComponent">
       <div className="HeroComponent-in">
         <div className="hero-one">
           <div className="home-one-one">

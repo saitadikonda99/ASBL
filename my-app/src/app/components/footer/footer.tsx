@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -8,8 +9,15 @@ import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
-        <div className="FooterComponent">
+        <div id="contact" className="FooterComponent">
             <div className="FooterComponent-in">
                 <div className="footer-one">
                     <div className="footer-one-one">
@@ -47,7 +55,7 @@ const Footer = () => {
                     <div className="footer-two-two">
                         <div className="footer-nav-one footer-nav-cm">
                             <Link href="/">OUR STORY</Link>
-                            <Link href="/">OUR PROJECTS</Link>
+                            <Link href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>OUR PROJECTS</Link>
                             <Link href="/">ENQUIRE</Link>
                         </div>
                         <div className="footer-nav-tw footer-nav-cm">

@@ -1,0 +1,50 @@
+
+
+.ProjectCardComponent {
+    width: 23%;
+}
+
+.ProjectCardComponent-in {
+    width: 100%;
+}
+
+.projectcard-one {
+    width: 100%;
+}
+
+.projectcard-one img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.projectcard-two {
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.projectcard-two h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.projectcard-two p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.projectcard-three {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.projectcard-three p {
+    font-size: .8rem;
+    font-weight: 500;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 5px;
+    padding: .2rem .5rem;
+}

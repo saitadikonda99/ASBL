@@ -1,0 +1,81 @@
+.FAQsComponent {
+    width: 100%;
+}
+
+.FAQsComponent-in {
+    width: 90%;
+    margin: 0rem auto;
+    padding: 4rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faqs-one {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 2rem;
+}
+
+.faqs-one-one {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.faqs-one-one h1 {
+    font-size: 2rem;
+    color: rgb(168, 168, 168);
+    font-weight: 700;
+}
+
+.faqs-one-one h1 span {
+    color: black;
+}
+
+.faqs-bar {
+    width: 100%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faqs-bar-one {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faqs-bar-one p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.faqs-bar-two {
+    width: 100%;
+}
+
+.faqs-bar-two p {
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+    padding: .5rem 0rem 0rem 0rem;
+}
+
+.faqs-two {
+    width: 50%;
+}
+
+.faqs-two-one {
+    width: 100%;
+    padding: 2rem 0rem;
+}
