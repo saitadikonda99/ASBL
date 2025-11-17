@@ -1,0 +1,90 @@
+
+
+.FooterComponent {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.FooterComponent-in {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.footer-one {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding: 1rem 0rem;
+}
+
+.footer-one-one {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-one-one a  {
+    text-decoration: none;
+}
+
+.footer-one-two {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-one-two a {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+}
+
+.footer-two {
+    width: 100%;
+    padding: 2rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-two-one {
+    width: fit-content;
+}
+
+.footer-two-two {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav-cm {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer-nav-cm a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-three {
+    width: 100%;
+    padding: 1rem 0rem;
+    border-top: 1px solid gray;
+    text-align: center;
+}
+
+.footer-three p {
+    font-size: .8rem;
+}
