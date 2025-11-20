@@ -1,0 +1,47 @@
+
+
+.ProjectNavComponent {
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.ProjectNavComponent-in {
+    width: 90%;
+    margin: 0rem auto;
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectNav-one{
+    flex-shrink: 0;
+}
+
+.projectNav-one img {
+    max-height: 40px;
+    width: auto;
+    display: block;
+}
+
+.projectNav-two {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.projectNav-two a {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.projectNav-two a:hover {
+    color: #0066cc;
+    transform: translateY(-2px);
+}

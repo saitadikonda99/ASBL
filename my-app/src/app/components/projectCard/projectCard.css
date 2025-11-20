@@ -48,3 +48,68 @@
     border-radius: 5px;
     padding: .2rem .5rem;
 }
+
+@media (max-width: 1024px) {
+    .ProjectCardComponent {
+        width: 30%;
+    }
+
+    .projectcard-two h1 {
+        font-size: 1.4rem;
+    }
+
+    .projectcard-two p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ProjectCardComponent {
+        width: 48%;
+    }
+
+    .projectcard-two h1 {
+        font-size: 1.3rem;
+    }
+
+    .projectcard-two p {
+        font-size: 0.9rem;
+    }
+
+    .projectcard-three p {
+        font-size: .75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ProjectCardComponent {
+        width: 100%;
+    }
+
+    .projectcard-two h1 {
+        font-size: 1.2rem;
+    }
+
+    .projectcard-two p {
+        font-size: .9rem;
+    }
+
+    .projectcard-three p {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .projectcard-two h1 {
+        font-size: 1.1rem;
+    }
+
+    .projectcard-two p {
+        font-size: .85rem;
+    }
+
+    .projectcard-three p {
+        font-size: .65rem;
+        padding: .15rem .4rem;
+    }
+}

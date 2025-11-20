@@ -79,3 +79,85 @@
     width: 100%;
     padding: 2rem 0rem;
 }
+
+@media (max-width: 1024px) {
+    .FAQsComponent-in {
+        width: 95%;
+    }
+
+    .faqs-one {
+        padding: 1.5rem;
+    }
+
+    .faqs-one-one h1 {
+        font-size: 1.8rem;
+    }
+
+    .faqs-bar-one p {
+        font-size: 0.95rem;
+    }
+
+    .faqs-bar-two p {
+        font-size: .85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .FAQsComponent-in {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem 0rem;
+    }
+
+    .faqs-one,
+    .faqs-two {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .faqs-one-one h1 {
+        font-size: 1.6rem;
+    }
+
+    .faqs-bar-one p {
+        font-size: 0.9rem;
+    }
+
+    .faqs-bar-two p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .FAQsComponent-in {
+        width: 95%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0rem 0rem;
+    }
+
+    .faqs-one,
+    .faqs-two {
+        width: 100%;
+        padding: .5rem 0rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .faqs-one-one h1 {
+        font-size: 1.4rem;
+    }
+
+    .faqs-bar {
+        padding: 0.8rem;
+    }
+
+    .faqs-bar-one p {
+        font-size: 0.85rem;
+    }
+
+    .faqs-bar-two p {
+        font-size: .75rem;
+    }
+}

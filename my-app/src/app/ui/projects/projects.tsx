@@ -4,7 +4,7 @@ import './projects.css'
 
 import ProjectCard from '@/app/components/projectCard/projectCard'
 
-const ProjectData = [
+export const ProjectData = [
     {
         id: 1,
         imageSrc: '/projects/1.webp',
@@ -48,6 +48,7 @@ const Projects = () => {
                     {ProjectData.map((project) => (
                         <ProjectCard
                             key={project.id}
+                            id={project.id}
                             imageSrc={project.imageSrc}
                             title={project.title}
                             description={project.description}

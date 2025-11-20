@@ -1,18 +1,27 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 
 import './projectCard.css'
 
 interface ProjectCardProps {
+  id?: number;
   imageSrc?: string;
   title?: string;
   description?: string;
   features?: string[];
 }
 
-const ProjectCard = ({ imageSrc, title, description, features }: ProjectCardProps   ) => {
-  return (
-        <div className="ProjectCardComponent">
+const ProjectCard = ({ id, imageSrc, title, description, features }: ProjectCardProps   ) => {
+  
+    const handleClick = () => {
+        window.location.href = `/projectView/${id}`;
+    }
+
+    console.log("ProjectCard features:", id);
+
+    return (
+        <div className="ProjectCardComponent" onClick={handleClick}>
             <div className="ProjectCardComponent-in">
                 <div className="projectcard-one">
                      <Image

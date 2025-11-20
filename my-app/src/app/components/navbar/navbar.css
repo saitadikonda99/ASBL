@@ -2,22 +2,33 @@
 
 .NavbarComponent {
     width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
 }
 
 .NavbarComponent-in {
-    width: 100%;
-    padding: 2rem 4rem;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0rem;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    position: relative;
 }
 
 .nav-one {
-    width: 16%;
+    flex-shrink: 0;
+}
+
+.nav-one img {
+    max-height: 45px;
+    width: auto;
+    display: block;
 }
 
 .nav-two {
-    width: 84%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -28,10 +39,155 @@
     color: black;
     font-size: 1rem;
     font-weight: 400;
-    padding: .2rem 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .nav-two a:hover {
-    text-decoration: underline;
-    color: blue;
+    color: #0066cc;
+    transform: translateY(-2px);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    position: relative;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    display: block;
+    transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(10.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-10.5px) rotate(-45deg);
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 998;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .NavbarComponent-in {
+        padding: 1.5rem 3rem;
+    }
+    
+    .nav-two {
+        gap: 1.5rem;
+    }
+    
+    .nav-two a {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .NavbarComponent-in {
+        padding: 1.2rem 2rem;
+    }
+
+    .nav-one img {
+        max-height: 40px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-two {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        padding: 2rem;
+    }
+
+    .nav-two.active {
+        right: 0;
+    }
+
+    .nav-two a {
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding: 1rem 1.5rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 8px;
+    }
+    
+    .nav-two a:hover {
+        background-color: #f0f0f0;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .NavbarComponent-in {
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-one img {
+        max-height: 35px;
+    }
+
+    .nav-two {
+        width: 85%;
+        max-width: 100%;
+        gap: 2rem;
+    }
+    
+    .nav-two a {
+        font-size: 1.2rem;
+    }
 }

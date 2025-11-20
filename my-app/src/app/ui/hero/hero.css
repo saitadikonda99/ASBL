@@ -73,3 +73,167 @@
     font-weight: 900;
     color: black;
 }
+
+@media (max-width: 1024px) {
+    .home-one-two-one h1 {
+        font-size: 12rem;
+    }
+
+    .home-one-two-two p {
+        font-size: 1.5rem;
+    }
+
+    .home-one-two-three p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .HeroComponent-in {
+        height: 70vh;
+    }
+
+    .home-one-one {
+        height: 70vh;
+    }
+
+    .home-one-two {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .home-one-two-one {
+        padding: 2rem 0rem 0rem 0rem;
+    }
+
+    .home-one-two-one h1 {
+        font-size: 8rem;
+    }
+
+    .home-one-two-two {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 2rem;
+    }
+
+    .home-one-two-two p {
+        font-size: 1.2rem;
+    }
+
+    .home-one-two-three {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 1.5rem;
+    }
+
+    .home-one-two-three p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .HeroComponent-in {
+        height: 60vh;
+    }
+
+    .home-one-one {
+        height: 60vh;
+    }
+
+    .home-one-two {
+        width: fit-content;
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        display: block;
+    }
+
+    .home-one-two-one {
+        padding: 0rem;
+        padding: 4rem 0rem 0rem 0rem;
+    }
+
+    .home-one-two-one h1 {
+        font-size: 6rem !important;
+        color: rgb(241, 241, 241);
+        font-weight: 900;
+        line-height: .8;
+    }
+
+    .home-one-two-two {
+        width: 100%;
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .home-one-two-two p {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .home-one-two-three {
+        width: 100%;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .home-one-two-three p {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .home-one-two-three p span {
+        font-weight: 900;
+        color: black;
+    }
+
+    .home-one-two-one {
+        padding: 1rem 0rem 0rem 0rem;
+    }
+
+    .home-one-two-one h1 {
+        font-size: 5rem;
+    }
+
+    .home-one-two-two {
+        margin-top: 1.5rem;
+    }
+
+    .home-one-two-two p {
+        font-size: 1rem;
+    }
+
+    .home-one-two-three {
+        margin-top: 1rem;
+    }
+
+    .home-one-two-three p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-one-two-one h1 {
+        font-size: 4rem;
+    }
+
+    .home-one-two-two p {
+        font-size: 0.9rem;
+    }
+
+    .home-one-two-three p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,150 @@
+.ProjectViewComponent {
+    width: 100%;
+}
+
+.ProjectViewComponent-in {
+    width: 100%;
+}
+
+.projectView-one {
+    width: 90%;
+    margin: 0rem auto;
+    padding: 2rem 0rem 1rem 0rem;
+    ;
+}
+
+.projectView-one h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: rgb(100, 100, 100);
+}
+
+.projectView-one h1 span {
+    color: blue;
+}
+
+.projectView-two {
+    width: 90%;
+    margin: 0rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.projectView-two-one {
+    width: 70%;
+}
+
+.projectView-two-one img {
+    border-radius: 10px;
+    height: auto;
+}
+
+.projectView-two-two {
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
+.project-about {
+    width: 100%;
+    padding: 1.5rem 1.5rem;
+}
+
+.project-about-one {
+    width: 100%;
+}
+
+.project-about-one h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.project-about-two {
+    width: 100%;
+}
+
+.project-about-two p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+    line-height: 1.6rem;
+}
+
+.project-about-three {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.project-about-three p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 1px solid rgb(198, 198, 198);
+    background-color: white;
+    border-radius: 5px;
+    padding: .5rem .5rem;
+}
+
+.project-about-four {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.project-about-four button.download-btn {
+    width: 70%;
+    padding: .7rem 0rem;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.project-about-four button.buy-btn {
+    width: 30%;
+    padding: .7rem 0rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+@media (max-width: 1024px) {
+    .projectView-two {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .projectView-two-one {
+        width: 100%;
+    }
+
+    .projectView-two-two {
+        width: 100%;
+    }
+}
