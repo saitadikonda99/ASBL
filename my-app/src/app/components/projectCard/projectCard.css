@@ -4,6 +4,10 @@
     width: 23%;
 }
 
+.ProjectCardComponent:hover {
+    cursor: pointer;
+}
+
 .ProjectCardComponent-in {
     width: 100%;
 }
