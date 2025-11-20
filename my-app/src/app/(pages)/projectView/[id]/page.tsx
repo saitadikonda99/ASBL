@@ -29,7 +29,7 @@ const projectView = () => {
         <div className="projectView-two">
           <div className="projectView-two-one">
             <Image
-              src={"/projects/1.webp"}
+              src={ project?.imageSrc || "/projects/1.webp"}
               alt="Project Image"
               width={1000}
               height={800}
